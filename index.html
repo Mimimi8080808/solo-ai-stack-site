@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solo AI Stack</title>
+<meta name="description" content="Practical AI tools for people who work alone. Prices checked on official pages and dated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column, a stacked-bars mark echoing the logo, tool entries as spec sheets */
+:root{
+  --bg:#F3F4F1; --surface:#FFFFFF; --ink:#1D2B36; --muted:#56656F; --line:#D9DDD8; --accent:#2E6B5E; --chip:#E4ECE8;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141B21;--surface:#1B242B;--ink:#E6ECEF;--muted:#9AA8B1;--line:#2C3840;--accent:#7FC4B2;--chip:#22312E;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141B21;--surface:#1B242B;--ink:#E6ECEF;--muted:#9AA8B1;--line:#2C3840;--accent:#7FC4B2;--chip:#22312E;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:18px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:680px;margin:0 auto;padding-block:40px 64px;display:grid;gap:40px}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+header{display:grid;gap:16px}
+.mark{display:grid;gap:5px;width:44px}
+.mark i{display:block;height:8px;border-radius:2px;background:var(--ink)}
+.mark i:nth-child(2){width:78%;background:var(--accent)}
+.mark i:nth-child(3){width:56%}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(34px,7vw,48px);font-weight:800;letter-spacing:-.02em}
+h2{font-size:24px;font-weight:800}
+h3{font-size:22px;font-weight:600}
+p{margin:0}
+.lede{color:var(--muted);max-width:60ch}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{font-family:var(--mono);font-size:13px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+nav a:hover{border-color:var(--accent);color:var(--accent)}
+.follow{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:14px}
+section{display:grid;gap:18px}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;display:grid;gap:12px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{font-family:var(--mono);font-size:12px;background:var(--chip);color:var(--ink);padding:3px 10px;border-radius:4px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:16px}
+dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+dd{margin:0;min-width:0}
+@media (max-width:480px){dl{grid-template-columns:1fr}dt{padding-top:6px}}
+.go{font-family:var(--display);font-weight:600;font-size:16px}
+.small{font-size:15px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:20px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h1>AI tools for people who work alone</h1>
+    <p class="lede">Short, plain guides to AI and productivity tools for freelancers, solo creators and one-person businesses. Every price and feature below was checked on the tool's official page, with the date shown.</p>
+    <nav aria-label="Sections"><a href="#tools">Tools</a><a href="#disclosure">Disclosure</a><a href="#privacy">Privacy</a></nav>
+    <div class="follow" aria-label="Follow">
+      <a href="https://x.com/soloaistack1">X</a>
+      <a href="https://www.threads.com/@soloaistack1">Threads</a>
+      <a href="https://www.instagram.com/soloaistack1/">Instagram</a>
+      <a href="https://www.tiktok.com/@soloaistack1">TikTok</a>
+      <a href="https://www.youtube.com/@soloaistack-1">YouTube</a>
+      <a href="https://www.pinterest.com/soloaistack1/">Pinterest</a>
+    </div>
+  </header>
+
+  <section id="tools">
+    <p class="label">The tool list</p>
+
+    <article class="tool">
+      <div class="meta"><span class="chip">Video &amp; podcast editing</span><span class="chip">Checked Oct 30, 2026</span></div>
+      <h3>Descript</h3>
+      <p>Edit audio and video by editing the transcript, like a document.</p>
+      <dl>
+        <dt>Free</dt><dd>One-time 60 minutes of media, 100 AI credits, 720p export with a watermark.</dd>
+        <dt>Hobbyist</dt><dd>$16–$24 per person per month depending on billing. 10 media hours a month, 1080p without watermark, Studio Sound, Remove Filler Words, Create Clips.</dd>
+        <dt>For</dt><dd>Solo podcasters and YouTubers who record talking-head videos or interviews.</dd>
+        <dt>Skip if</dt><dd>Your videos have little speech, or you record under an hour a month (try Free first).</dd>
+      </dl>
+      <a class="go" href="https://www.descript.com/pricing">Descript pricing page →</a>
+    </article>
+
+    <article class="tool">
+      <div class="meta"><span class="chip">AI voice</span><span class="chip">Checked Oct 30, 2026</span></div>
+      <h3>ElevenLabs</h3>
+      <p>Turn written text into speech for videos, tutorials and product demos.</p>
+      <dl>
+        <dt>Free</dt><dd>10k credits a month, up to 3 Studio projects. No commercial license listed.</dd>
+        <dt>Starter</dt><dd>Adds a commercial license, Instant Voice Cloning, Dubbing Studio and 20 Studio projects.</dd>
+        <dt>For</dt><dd>Creators and course builders who need narration without recording every take.</dd>
+        <dt>Skip if</dt><dd>You post a few clips a month and are fine recording your own voice. For client work, budget for a paid plan.</dd>
+      </dl>
+      <a class="go" href="https://elevenlabs.io/pricing">ElevenLabs pricing page →</a>
+    </article>
+
+    <article class="tool">
+      <div class="meta"><span class="chip">Meeting notes</span><span class="chip">Checked Oct 30, 2026</span></div>
+      <h3>Otter.ai</h3>
+      <p>Record and transcribe calls, then ask an AI questions about the transcript.</p>
+      <dl>
+        <dt>Free</dt><dd>300 minutes a month, 30 minutes per conversation, 3 file imports in total.</dd>
+        <dt>Pro</dt><dd>$16.99 a month, or $8.33 a month billed yearly. 1,200 minutes a month, 90 minutes per conversation, 10 imports a month.</dd>
+        <dt>For</dt><dd>Freelancers and consultants with regular client calls.</dd>
+        <dt>Skip if</dt><dd>You rarely have calls, or mainly transcribe long uploaded files.</dd>
+      </dl>
+      <a class="go" href="https://otter.ai/pricing">Otter.ai pricing page →</a>
+    </article>
+
+    <article class="tool">
+      <div class="meta"><span class="chip">Scheduling</span><span class="chip">Checked Oct 30, 2026</span></div>
+      <h3>Calendly</h3>
+      <p>A booking page so clients pick a time that fits your calendar.</p>
+      <dl>
+        <dt>Free</dt><dd>One event type, one calendar connection, booking page.</dd>
+        <dt>Standard</dt><dd>$10 per seat a month. Unlimited event types, six calendars, reminders, Stripe and PayPal payments, no Calendly branding.</dd>
+        <dt>For</dt><dd>Freelancers, coaches and consultants who book calls often.</dd>
+        <dt>Skip if</dt><dd>You book a few calls a month with one meeting type.</dd>
+      </dl>
+      <a class="go" href="https://calendly.com/pricing">Calendly pricing page →</a>
+    </article>
+
+    <article class="tool">
+      <div class="meta"><span class="chip">Writing</span><span class="chip">Checked Oct 30, 2026</span></div>
+      <h3>Grammarly</h3>
+      <p>Checks spelling, grammar and tone as you type in email, docs and the browser.</p>
+      <dl>
+        <dt>Free</dt><dd>Spelling and grammar fixes, tone detection, 100 AI prompts a month.</dd>
+        <dt>Pro</dt><dd>$12 per member a month. 2,000 prompts, tone adjustment, full-sentence rewrites, plagiarism and AI-text detection.</dd>
+        <dt>For</dt><dd>Freelancers writing proposals and client emails, especially in a second language.</dd>
+        <dt>Skip if</dt><dd>You only need typo checks.</dd>
+      </dl>
+      <a class="go" href="https://www.grammarly.com/plans">Grammarly plans page →</a>
+    </article>
+
+    <p class="small">New tools are added after their official pricing has been checked. Prices change, so confirm on the official site before you buy.</p>
+  </section>
+
+  <section id="disclosure">
+    <h2>Disclosure</h2>
+    <p>Solo AI Stack is reader-supported. The links on this page currently go to each tool's official site. When we add affiliate links, they will be marked "Affiliate link" next to the link. If you sign up through one, we may earn a commission at no extra cost to you.</p>
+    <p>We do not accept payment to change what we write about a tool. This page is general information, not financial, legal or tax advice.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy</h2>
+    <p>This page does not ask for personal information and has no forms, comments or newsletter. If you follow a link to another site, that site's privacy policy applies there.</p>
+  </section>
+
+  <footer>Solo AI Stack · AI and productivity tools for solo workers</footer>
+</div>
+</body>
+</html>
